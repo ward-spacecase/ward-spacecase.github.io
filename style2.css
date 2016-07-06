@@ -1,0 +1,47 @@
+body {
+     background-image: none;
+}
+.my{
+    font-size: 78px;
+    margin-top: 50px;
+    margin-bottom: 0;
+}
+section .skill {
+     display: inline-block;
+    box-shadow: 5px 10px 20px;
+    border-radius: 100%;
+    width: 200px;
+    height: 200px;
+}
+.skill h2 {
+    font-size: 68px;
+   color: #FFFFFF;
+}
+.c, .d, .f, .g {
+    margin-left: 50px;
+}
+ .b {
+    background-color: #e17d00;
+}
+.c {
+    background-color: #0065d6;
+}
+.d {
+    background-color: #e5d856;
+}
+.e {
+    background-color: #ff3b3b;
+}
+.f{
+   background-color: #A4C64f; 
+}
+.f h2{
+    font-size: 45px;
+    padding-top: 37px;
+}
+.g {
+    background-color: #6200c9;
+}
+.second {
+    margin-top: 20px;
+}
