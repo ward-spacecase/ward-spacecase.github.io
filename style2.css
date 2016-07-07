@@ -7,42 +7,95 @@ body {
     margin-bottom: 30px;
 }
 section .skill {
+    z-index: 2;
      display: inline-block;
     box-shadow: 5px 10px 20px;
     border-radius: 100%;
     width: 200px;
     height: 200px;
     opacity: 0.9;
+    backface-visibility: hidden;
+    transition: 0.5s;
+    transform-style: preserve-3d;
+	transition-timing-function: cubic-bezier(0.785, 0.135, 0.150, 0.860);
 }
+section .back {
+    transition: 0.5s;
+    transform: rotate3d(45,45,0,180deg);
+    top: 0;
+    position: absolute;
+    display: block;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    backface-visibility: hidden;
+}
+.back img {
+    margin-top: 15%;
+    border: none;
+    border-radius: 0;
+}
+.unmargin img {
+    margin-top: 33%;
+}
+section .hover {
+    box-shadow: none;
+    margin: 0 20px 0 20px;
+}
+section .hover:hover .back {
+   transform: none;
+}
+section .hover:hover .skill {
+  transform: rotate3d(45, 45, 0, 180deg);
+  transition: 0.5s;
+}
+
 .skill h2 {
     font-size: 68px;
    color: #FFFFFF;
 }
-.c, .d, .f, .g {
-    margin-left: 50px;
-}
- .b {
+ .html {
     background-color: #e17d00;
 }
-.c {
+.css {
     background-color: #0065d6;
 }
-.d {
+.js {
     background-color: #e5d856;
 }
-.e {
-    background-color: #ff3b3b;
+
+
+.java {
+    background-color: #f64b00;
 }
-.f{
+.android{
    background-color: #A4C64f; 
 }
-.f h2{
+.android h2 , .angul h2 {
     font-size: 45px;
     padding-top: 37px;
 }
-.g {
+.csharp {
     background-color: #6200c9;
 }
+
+
+.unity {
+    background-color: #414749;
+}
+
+.unity h2 {
+    font-size: 40px;
+    padding-top: 43px;
+}
+.angul {
+    background-color: #ff3b3b;
+}
+.node {
+    background-color: #00d404;
+}
+
+
 .second {
     margin-top: 20px;
 }
