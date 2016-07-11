@@ -24,12 +24,16 @@ section button {
 }
 
 .dropdown-content {
-    text-align: center;
+    color: #000000;
+    opacity: .6;
     display: inline-block;
-    position: absolute;
+    position: relative;
+    z-index: 4;
     visibility: hidden;
     background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    min-height: 120px;
+    min-width: 450px;
     padding: 12px 16px;
+    border-radius: 15px;
+     box-shadow: 5px 5px 5px;
 }
