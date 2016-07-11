@@ -6,6 +6,7 @@ body {
     margin-top: 30px;
     margin-bottom: 30px;
 }
+
 section .skill {
     z-index: 2;
      display: inline-block;
@@ -13,13 +14,14 @@ section .skill {
     border-radius: 100%;
     width: 200px;
     height: 200px;
-    opacity: 0.9;
+    opacity: 0.88;
     backface-visibility: hidden;
     transition: 0.5s;
     transform-style: preserve-3d;
 	transition-timing-function: cubic-bezier(0.785, 0.135, 0.150, 0.860);
 }
 section .back {
+    opacity: 0.88;
     transition: 0.5s;
     transform: rotate3d(45,45,0,180deg);
     top: 0;
