@@ -1,0 +1,55 @@
+body {
+    text-align: center;
+    -webkit-perspective: 600;
+    -webkit-animation:background 5s linear infinite;
+}
+@keyframes background {
+    0% {background: #c33b3b;}
+    10%{background: #c3863b;}
+    20%{background: #a6c33b;}
+    30%{background: #46c33b;}
+    40%{background: #3bc39d;}
+    50%{background: #3ba4c3;}
+    60%{background: #3b59c3;}
+    70%{background: #703bc3;}
+    80%{background: #b43bc3;}
+    90%{background: #c33b5d;}
+    100%{background: #c33b3b;}
+}
+.hidden {
+    transition-delay: 5s;
+    display: inline;
+    visibility: hidden;
+    margin-top: 10px;
+}
+.box4:hover .hidden {
+    visibility: visible;
+}
+.box {
+    transition-duration: 4s;
+    display: inline-block;
+    margin-left: 40px;
+    width: 200px;
+    height: 200px;
+    -webkit-animation:background 2s linear infinite;
+}
+.box2 {
+    -webkit-animation:background 4s linear infinite;
+}
+.box3 {
+     -webkit-animation:boxtwo 3s linear infinite;
+    -webkit-animation:background 0.5s linear infinite;
+}
+.box4 {
+    -webkit-animation:background 1.7s linear infinite;
+}
+.box2:hover {
+    transform: rotate(170deg);
+    border-radius: 100px;
+}
+.box3:hover + .box4 {
+    transform: translate3d(0, 90px, 500px);
+}
+.box1:hover {
+    border: #000000 dashed 9px;
+}
