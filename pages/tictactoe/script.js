@@ -1,6 +1,7 @@
 var boolClicked;
 var lClick;
 var xTurn;
+var originalHtml = document.body.innerHTML;
 
 function reset(boolOne) {
     boolClicked = [false, false, false,
@@ -8,13 +9,7 @@ function reset(boolOne) {
                    false, false, false];
                    
     lClick = ["a", "b", "c", "d", "e", "f", "g", "h", "i"];
-    if(boolOne) {
-        for(var i = 1; i <= boolClicked.length; i++) {
-             document.getElementById(i).style.backgroundColor = "#ffffff";
-        document.getElementById(i).style.color = "#000000";
-        document.getElementById("inner" + i).style.visibility = "hidden";  
-        }
-    }
+   
     setXTurn();
     xTurn = true;
 }
@@ -57,12 +52,12 @@ function check() {
             } else {
                 alert("Game Over! Y's Win!!!");
             }
-            reset(true);
+           
         } else if(lClick[0] == true && lClick[1] == true && lClick[2] == true && lClick[3] == true &&
         lClick[4] == true && lClick[5] == true && lClick[6] == true && lClick[7] == true && 
         lClick[8] == true && lClick[9] == true) {
             alert("Game Over! It's a Draw!!!");
-            reset(true);
+         
         }
 }
 
@@ -86,5 +81,10 @@ function setYTurn() {
     }
     
 }
+function refresh() {
+    document.body.innerHTML = originalHtml;
+    document.reload;
+    reset();
+}
 
-reset(false);
+reset();
