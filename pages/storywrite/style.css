@@ -1,0 +1,31 @@
+body {
+    text-align: center;
+    background-color: #617f9c;
+    font-family: 'Indie Flower', cursive;
+}
+h1 {
+    box-shadow: 20px 20px 40px ;
+    border-radius: 15px;
+    text-align: center;
+    margin: 0 auto;
+    height: 100px;
+    width: 500px;
+    background-color: #eac632;
+}
+p {
+    font-size: 20px;
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 700px;
+    height: 400px;
+    background-color: #bb9e28;
+     animation: type 4s steps(60, end); 
+}
+p:nth-child(2){
+  animation: type2 8s steps(60, end);
+}
+
+button {
+    text-align: center;
+    margin-top: 20px;
+}
