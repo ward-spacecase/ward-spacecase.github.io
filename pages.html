@@ -6,12 +6,59 @@
     <title>Portfolios</title>
     <link rel="stylesheet" href="stylesheets/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source Code Pro">
+    <style>
+         .pageLink a{
+             border: #123abc solid 2px;
+             border-radius: 25px;
+             text-decoration: none;
+            font-size: 25px;
+            display: block;
+    position: relative;
+    color: #000000;
+    height: 50px;
+    width: 400px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+     
+}
+ .pageLink a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+.pageLink a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+ .pageLink a:hover {
+        -webkit-animation: colorChange 1.4s;
+        background-color: #3b82c3;
+   }
+   @keyframes colorChange {
+       30% {background-color: #7d3bc3; box-shadow: 5px 5px 5px;}
+       50% { transform: rotateY(35deg);box-shadow: 15px 15px 20px;}
+       70% {background-color:#c3943b;  box-shadow: 5px 5px 5px;}
+       100% {background-color: #3b82c3;}
+   }
+    </style>
 </head>
 
 <body>
+    <h1>My Pages</h1>
     <br><br><br>
-   <a href="pages/tictactoe/tictactoe.html" class="pageLink">1. TicTacToe Game</a><br>
-     <a href="pages/animation/animation.html" class="pageLink">2. Animations</a>
+  <div class="pageLink"> <a href="pages/tictactoe/tictactoe.html">1. TicTacToe Game</a> </div>
+   <div class="pageLink">  <a href="pages/animation/animation.html" >2. Animations</a>   </div>
+     <div class="pageLink">  <a href="pages/todo/todo.html">3. ToDo</a>  </div>
      <div class="sidebar">
         <ul>
             <li><a href="https://www.facebook.com/andrew.ward.10236115"><img src="icons/facebook.png"></a></li>

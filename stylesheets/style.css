@@ -68,9 +68,3 @@ nav ul li:hover {
 nav ul li .activeNav {
     color: white;
 }
-body .pageLink {
-    color: #000000;
-}
-body .pageLink:hover {
-    background-color: #8888ff;
-}
