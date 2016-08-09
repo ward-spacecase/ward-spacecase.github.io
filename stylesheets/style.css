@@ -68,15 +68,3 @@ nav ul li:hover {
 nav ul li .activeNav {
     color: white;
 }
-.accounts {
-  text-align: left;
-}
-.accounts button{
-    color: #39435e;
-    opacity: 0.7;
-    font-size: 20px;
-    background-color: #83a2f6;
-    width: 175px;
-    border: none;
-    border: #4e6bba solid 2px;
-}
