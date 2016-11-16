@@ -30,7 +30,7 @@ function chooseSquare(id) {
         document.getElementById(id).style.color = "#000000";
         document.getElementById("inner" + id).style.visibility = "visible";
         boolClicked[id - 1] = true;
-        lClick[id - 1] = "y";
+        lClick[id - 1] = "o";
         setXTurn();
     }
     check();
@@ -50,7 +50,7 @@ function check() {
             if(xTurn) {
                 alert("Game Over! X's Win!!!");
             } else {
-                alert("Game Over! Y's Win!!!");
+                alert("Game Over! O's Win!!!");
             }
            
         } else if(lClick[0] == true && lClick[1] == true && lClick[2] == true && lClick[3] == true &&
@@ -76,7 +76,7 @@ function setYTurn() {
         if(!boolClicked[i - 1]) {
         document.getElementById("inner" + i).classList.remove("xTurn");
         document.getElementById("inner" + i).classList.add("yTurn");
-        document.getElementById("inner" + i).innerHTML = "Y";
+        document.getElementById("inner" + i).innerHTML = "O";
         }
     }
     
